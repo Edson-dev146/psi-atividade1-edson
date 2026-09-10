@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}Cadastro{% endblock %}
+
+
+{% block conteudo %}
+
+<header>
+            <h1>Bem-vindo ao Sistema</h1>
+    </header>
+
+    <main>
+        <p>Escolha uma das opções abaixo para navegar:</p>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('cadastro')}}">Criar uma Conta (Cadastro)</a></li>
+                <li><a href="{{url_for('login')}}">Entrar (Login)</a></li>
+            </ul>
+
+        </nav>
+    </main> {% endblock %}

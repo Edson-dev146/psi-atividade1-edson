@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block titulo %}Livro{% endblock %}
+
+{% block conteudo %}
+
+            <h1>opa</h1> 
+{% if livro[id]==resenha[id]]}
+
+{% for livro in livros %}
+<li>{{ livro.titulo }}</li>
+<li>{{ livro.autor }}</li>   
+<li>{{ livro.ano }}</li>
+<li>{{ livro.genero }}</li>
+{% endfor %}   
+
+
+{% for resenha in resenhas %}
+<li>{{ resenha.usuario }}</li>
+<li>{{ resenha.texto }}</li>   
+
+{% endfor %}   
+
+
+{% endblock %}
+<li>{{ livro.titulo }}</li>
+
+<h2><a href="{{url_for('catalog.index')}}"></a>voltar</h2>
